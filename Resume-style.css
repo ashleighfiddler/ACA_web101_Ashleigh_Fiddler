@@ -1,0 +1,91 @@
+body {
+    font-family: 'Carrois Gothic', sans-serif;
+    padding: 20px;
+    
+}
+
+header {
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/27/07/32/light-1282314_960_720.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Carrois Gothic', sans-serif;
+    width: 850px;
+    margin: 20px, 20px, 20px, 0px;
+   
+}
+
+main {
+    margin: 20px, 20px, 20px, 20px;
+    width: 850px;
+    
+}
+
+.grid-container {
+display: grid;
+grid-template-areas:
+'pic who icons'
+'pic who icons'
+'skills education education'
+'skills education education'
+'experience experience experience'
+'experience experience experience';
+width: 810px;
+
+
+
+}
+div {
+    align-items: center; 
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 20px; 
+    background-color: #eaebe7;
+    margin: 3% 0; 
+   
+}
+h3 {
+    text-align: center;
+    background-color: #eaebe7;
+}
+.who {
+grid-area: who;
+}
+.pic {
+    grid-area: pic;
+    border-radius: 20px;
+    height: 80%
+
+}
+.icons {
+    grid-area: icons; 
+    
+}
+.education {
+    grid-area: education;
+    
+}
+.skills {
+    grid-area: skills;
+}
+.experience {
+    grid-area: experience;
+   
+}
+.work {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.grid-container > article {
+font-size: 10pt;
+padding: 20px;
+}
