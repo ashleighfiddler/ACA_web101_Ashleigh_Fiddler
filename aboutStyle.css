@@ -31,8 +31,10 @@ body {
         
     .container > article {
             padding: 20px;
-            width: 300px;
+            width: 200px;
             text-align: center;
+            border: solid #f8b232 2px;           
+ 
         }    
         
     img {        
