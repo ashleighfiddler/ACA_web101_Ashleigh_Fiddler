@@ -1,86 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="./contactStyle.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Contact Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="results.html" method="GET" enctype="multipart/form-data">
+  <header>
+    <h1>CONTACT ME</h1> 
+  </header>
+  <main> 
+    <form class="container" action="results.html" method="GET" enctype="multipart/form-data">
+      <section class="aboutyou">
+        <h3> About You</h3>
+        <div>
+         <label for="name">Name</label>
+         <input type="text" name="name" id="name" >
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" >
+        </div> 
+      </section>  
+      <section class="how">
+           <h3>How Did You Hear About Me?</h3>
+           <div>
+            <label for="Classmate">Classmate</label>
+            <input type="checkbox" name= "Classmate" id= "Classmate">
+          </div>
+          <div>
+           <label for="Resume Submission">Resume Submission</label>
+            <input type="checkbox" name="Resume-Submission" id="Resume-Submission">
+          </div>
+          <div>
+            <label for="LinkedIn">LinkedIn</label>
+            <input type="checkbox" name="LinkedIn" id="LinkedIn">
+          </div>
+          <div>
+            <label for="Coding">Coding Acadey Rec</label>
+            <input type="checkbox" name="Coding" id="Coding">
+          </div>
+      </section>
+        <Section class="messageme">
+         <h3> Send Me a Message</h3>
+         <textarea id="message" name="message" minlength="20" maxlength="500"></textarea>
+        <div>
+          <h4>Would you like to receive a reply?</h4>
+          <label for="yes">Yes</label>
+          <input type="radio" name="reply" id="yes" value="yes">
+          <label for="no">No</label>
+          <input type="radio" name="reply" id="no" value="no">
+        </div>
+      </Section>
+      <section class="footer">
+          <h4>Enter your birthdate and receive a birthday wish from me!</h4>
+          <label for="date"></label>
+          <input type="date" name="date" id="date" min="1919-06-10">
+          <div class="submit"> 
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button> 
+          </div>
+      </section>
       <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" >
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" >
-    </div>
-    <div>
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" min="1" max="200" step="5">
-    </div>
-    <div>
-      <label for="date">Birthdate</label>
-      <input type="date" name="date" id="date" min="2019-06-10">
-    </div>
-    <div>
-      Favorite Food
-      <div>
-        <label for="banana">Banana</label>
-        <input type="checkbox" name="banana" id="banana">
+          <input type="hidden" name="hidden" value="hi">
       </div>
-      <div>
-        <label for="apple">Apple</label>
-        <input type="checkbox" name="apple" id="apple">
-      </div>
-    </div>
-    <div>
-      Gender
-      <div>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male">
-      </div>
-      <div>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female">
-      </div>
-    </div>
-    <div>
-      <label for="eyeColor">Eye Color</label>
-      <select name="eyeColor" id="eyeColor" multiple>
-        <option value="Green">Green</option>
-        <option label="Red" value="Red"></option>
-      </select>
-    </div>
-    <div>
-      <label for="bio">Bio</label>
-      <textarea id="bio" name="bio"></textarea>
-    </div>
-    <input type="hidden" name="hidden" value="hi">
-    <div>
-      <label for="file">File</label>
-      <input id="file" type="file" name="file">
-    </div>
-    <div>
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" id="phone">
-    </div>
-    <div>
-      <label for="url">URL</label>
-      <input type="url" name="url" id="url">
-    </div>
-    <div>
-      <label for="color">Color</label>
-      <input type="color" name="color" id="color">
-    </div>
-    <div>
-      <label>
-        Password
-        <input type="password" name="password" >
-      </label>
-    </div>
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
-  </form>
+    </form>
+  </main>
 </body>
 </html>

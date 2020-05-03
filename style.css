@@ -1,6 +1,6 @@
 body {
     font-family: 'Carrois Gothic', sans-serif;
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
+    background-image: url"(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg)";
     background-repeat: no-repeat;
     background-size: 1600px 1000px;
     width: 100vw;
@@ -9,15 +9,17 @@ body {
   /* What kind of selector is this? */
   .logo {
     width: 150px;
-    height: auto;   
+    height: auto; 
+    padding-left: 10%  
   }
   
   header {
     display: grid;
-    grid-template-columns: 40% 60%;
-    width: 100%;
-    background-color: azure;
-    margin-bottom: 20px;
+    grid-template-columns: 40% 60%;    
+    background-color: #b2c9d6;
+    margin-left: 20px;
+    margin:20px;
+    border-bottom: solid #f8b232 10px;
   }
   
   /* This is an element within and element selector */ 
@@ -29,7 +31,7 @@ body {
     font-family: 'Carrois Gothic', sans-serif;
     font-size: 15px;
     border-radius: 25px;
-    background: rgb(226, 252, 252);
+    background: #d6e2ea;
     padding: 20px;
     text-align: center;
   }

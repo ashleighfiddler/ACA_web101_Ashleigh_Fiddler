@@ -1,0 +1,52 @@
+body { 
+    font-family: 'Carrois Gothic', sans-serif;
+    background-repeat: no-repeat;
+    
+    }
+    
+    header {      
+        background-color: #b2c9d6;
+        border-bottom: solid #f8b232 10px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;    
+      }
+    
+      
+    main {
+        padding: 20px;  
+        background-image: url('https://cdn.pixabay.com/photo/2016/03/27/07/32/light-1282314_960_720.jpg');
+        background-size: cover;   
+        background-repeat: no-repeat;
+        
+        }
+
+@media (min-width: 992px) { 
+    section {
+         display: flex;
+         flex-direction: row;
+       }
+        
+    .container > article {
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }    
+        
+    img {        
+    width: 60px;
+    padding: 20px;
+    
+}
+
+
+    .images {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+
+}
+}
