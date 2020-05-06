@@ -58,9 +58,8 @@ body {
   /* This is an ID selector */
   #profile-pic {    
     height: 300px;
-    padding: 18px;
-    border-radius: 10%;
-    border: solid darkslategray 3px;
+    border: solid #f8b232 3px;
+    padding: 5px;
 
   }
   

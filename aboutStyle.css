@@ -23,6 +23,17 @@ body {
         
         }
 
+        .pic {        
+            width: 60px;
+            padding: 20px;
+                
+        }
+        .container {
+            display: grid;
+            grid-gap: 20px;
+            padding: 20px;
+        }        
+
 @media (min-width: 992px) { 
     section {
          display: flex;
@@ -30,18 +41,11 @@ body {
        }
         
     .container > article {
-            padding: 20px;
-            width: 200px;
-            text-align: center;
-            border: solid #f8b232 2px;           
+        border: solid #f8b232 2px;
+        padding: 20px;
+        width: 250px;                 
  
         }    
-        
-    img {        
-    width: 60px;
-    padding: 20px;
-    
-}
 
 
     .images {
@@ -51,4 +55,8 @@ body {
     justify-content: space-around;
 
 }
+}
+
+@media (min-width: 576px) { 
+    
 }

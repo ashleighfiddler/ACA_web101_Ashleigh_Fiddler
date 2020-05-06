@@ -1,7 +1,7 @@
 body {
     font-family: 'Carrois Gothic', sans-serif;
    }
-header {      
+/* header {      
     background-color: #b2c9d6;
     border-bottom: solid #f8b232 10px;
     height: 120px;
@@ -9,7 +9,38 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;    
+  } */
+  header {
+    display: grid;
+    grid-template-columns: 40% 60%;    
+    background-color: #b2c9d6;
+    margin-bottom: 10px;
+    border-bottom: solid #f8b232 10px;
   }
+  
+  h1 {
+      margin-left: 40px;
+      justify-content: center;
+  }
+  nav > a {
+    margin: 2% 1% 3%;
+    height: 10%;
+    width: 15%;
+    color: black;
+    font-family: 'Carrois Gothic', sans-serif;
+    font-size: 15px;
+    border-radius: 25px;
+    background: #d6e2ea;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
   main {
     padding: 20px;  
     background-image: url('https://cdn.pixabay.com/photo/2016/03/27/07/32/light-1282314_960_720.jpg');
@@ -17,32 +48,22 @@ header {
     background-repeat: no-repeat;
     }
 
-form {
+.container {
     display: grid;
     grid-gap: 20px;
     padding: 20px;
 }
 
-form > section {
+form > section  {
     border: solid #f8b232 2px;
     padding: 20px;
     width: 250px;
         }
 
-
-
-
-@media (min-width: 992px) {
-
 .container {
     justify-content: center;
-    text-align: center; 
-    grid-template-areas:
-        "aboutyou how"        
-        "messageme footer"
-          
-    }
-  
+    text-align:center;
+}
 
     .aboutyou {
         grid-area: aboutyou;
@@ -54,17 +75,39 @@ form > section {
         
     }
         
-    messageme {
+   .messageme {
         grid-area: messageme;
         
     }
     .footer {
         grid-area: footer;
     }
-       
-    }
-    @media (min-width: 576px) {
+
+/* @media (min-width: 576px) {
         .container {
-            justify-content: center;
+           grid-template-areas:
+                "aboutyou how"        
+                "messageme footer"
+            }
+    }  */
+
+@media (min-width: 576px) {
+    
+    .container {
+        grid-template-areas:
+        "aboutyou"
+        "how"
+        "messageme"
+        "footer"
+    }
+}
+
+
+
+@media (min-width: 996px) {
+    .container {
+       grid-template-areas:
+            "aboutyou how"        
+            "messageme footer"
         }
-     }
+} 
