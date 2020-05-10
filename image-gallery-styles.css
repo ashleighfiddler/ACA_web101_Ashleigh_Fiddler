@@ -72,12 +72,12 @@
     position: relative;
     width: 100%;
   }
-  
+/*   
   .image {
     display: block;
     width: 100%;
     height: auto;
-  }
+  } */
   
   .overlay {
     position: absolute;
